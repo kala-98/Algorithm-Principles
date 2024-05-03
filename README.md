@@ -7,3 +7,6 @@
 
 ### Binary Search
 - Getting the result by dividing a dataset in 2 equal portions each time. It is more efficient than simple search and the worst case scenario can be calculated throw $log{_2}{n}={x}$ where n is the number of elements in the sorted list, while x represents the maximum's attempts
+
+### Selection Sort
+- Sorting the element of a list: it is quite expensive since it takes O(n^2) to complete the action
