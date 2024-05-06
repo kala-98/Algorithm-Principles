@@ -27,12 +27,20 @@ An example with factorial:
     return x * fact(x-1)`
 
 ### Divide and Conquer (D&C)
-- Reduce the case to the most base one. Once this is done, apply that to the whole context
+- Reduce the case to the most basic one. Once this is done, apply that to the whole context
 
 ### Quick Sort
-- Sorting algorithm faster than selection sort: the process starts with breaking down the array, getting an item as reference (*pivot*) and divide the list in 2 parts (*partitioning*), one with lower numbers and one with greater. 
-Finally, apply the sort element to both sub-arrays. In the worst case is slow as selection sorts but in the average case it outplays the selection sort's algorithm
+- Sorting algorithm faster than selection sort: the process starts with breaking down the array, getting an item as reference (*pivot*) and divide the list in 2 parts (*partitioning*), one with lower numbers and one with greater. <br>
+Finally, apply the sort element to both sub-arrays. <br> 
+In the worst case is slow as selection sorts but in the average case it outplays the selection sort's algorithm
 O notation: $n * log{_2}{n}={x}$
 
 ---
 ![Testo alternativo](./images/Speed_Algorithms.png) 
+
+### Hash function
+- Data structure that return a number mapped with the input string which was provided. It's important for hash functions to consistently return the same output for the same input. This feature can be combined with array and make an *hash table* (in Python Dictionaries). <br>
+In order to avoid the collision it's important to set a reasonable load factor (LF) <br>
+The formula:  `$n. items / n. slots$` <br>
+Once the LF is greater than 0.7 it's time to resize the hash table (twice the size)
+
