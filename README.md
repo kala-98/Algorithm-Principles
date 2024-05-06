@@ -28,3 +28,11 @@ An example with factorial:
 
 ### Divide and Conquer (D&C)
 - Reduce the case to the most base one. Once this is done, apply that to the whole context
+
+### Quick Sort
+- Sorting algorithm faster than selection sort: the process starts with breaking down the array, getting an item as reference (*pivot*) and divide the list in 2 parts (*partitioning*), one with lower numbers and one with greater. 
+Finally, apply the sort element to both sub-arrays. In the worst case is slow as selection sorts but in the average case it outplays the selection sort's algorithm
+O notation: $n * log{_2}{n}={x}$
+
+---
+![Testo alternativo](./images/Speed_Algorithms.png) 
