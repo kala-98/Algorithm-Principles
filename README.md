@@ -14,7 +14,7 @@ Big O notation is the measure to see how an algorithm perform according to diffe
 - Sorting the element of a list: it is quite expensive since it takes O(n^2) to complete the action
 
 ### Recursive
-- An approach where a function calls itself. In order to avoid infinite loop, it's always made up by 2 parts:
+- An approach where a function calls itself. In order to avoid infinite loop it's always made up by 2 parts:
   - base case --> when the function doesn't call itself again
   - recursive case
    
@@ -25,3 +25,6 @@ An example with factorial:
     return 1
   else:
     return x * fact(x-1)`
+
+### Divide and Conquer (D&C)
+- Reduce the case to the most base one. Once this is done, apply that to the whole context
