@@ -58,5 +58,6 @@ Once the LF is greater than 0.7 it's time to resize the hash table (twice the si
 <hr>
 
 ### Breadth-First Search
-- Allow to find the shortest distance between two things. A graphical summary
-  ![Testo alternativo](./images/Breadth-First-Search.png)
+- Allow to find the shortest distance between two things (this does not necessarily mean that is the fastest). <br>
+A graphical summary
+![Testo alternativo](./images/Breadth-First-Search.png)

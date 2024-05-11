@@ -14,15 +14,18 @@ def find_mango_seller():
     graphs["Francesca"] = ["Maria"]
     graphs["Maria"] = []
 
+    searched = [] # to register those already searched before
     search_queue = deque()
     search_queue += graphs["you"]
 
     while search_queue: # until there's something here..
         person = search_queue.popleft() # takes the 1st element and remove it
-        if person_is_seller(person):
-            print(f"{person} is a mango seller!")
-            return True 
-        else:
-            search_queue += graphs[person]
+        if not person in searched:
+            if person_is_seller(person):
+                print(f"{person} is a mango seller!")
+                return True 
+            else:
+                search_queue += graphs[person]
+                searched.append(person)
     return False 
 
